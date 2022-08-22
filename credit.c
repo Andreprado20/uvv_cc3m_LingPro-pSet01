@@ -84,7 +84,7 @@ int main(void) {
     */
     
     int Count = 0;
-    long int CC = creditCard;
+    long int CC = creditCard;     //Variável que coleta o número do cartão de crédito para a operação a seguir, sem alterar o valor original do cartão.
     while (CC != 0){
       CC = CC / 10;
       Count++;
