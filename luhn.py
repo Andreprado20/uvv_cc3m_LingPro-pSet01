@@ -36,7 +36,8 @@ cardBrand = cardBrandCheck(firstDigits)
 # Reverses the card number by reversing the order of the elements in the array containing the card number --------------------------------
 cardNumberSplited.reverse()
 
-# Applies the first step of the original Algorithm by separating the two parts of the original number (the digits starting by the second-to-last digit and the rest of the digits) and storing each one into it's own array ------------------------------------------------
+# Applies the first step of the original Algorithm by separating the two parts of the original number (the digits starting by the second-to-last digit 
+# and the rest of the digits) and storing each one into it's own array -------------------------------------------------------------------
 index = len(cardNumberSplited)
 arrayToDouble = []
 for element in range(1, index, 2):
@@ -80,7 +81,9 @@ checkInput = [finalSum]
 checkInputSliced = list(map(int, str(checkInput[0])))
 checkLastDigit = checkInputSliced[len(checkInputSliced) - 1]
 
-# Applies third step of the original algorithm verifying if the last digit of the sum is 0 (zero). If it's different than zero or if it's lenght is not between 13 and 16, it returns the card is invalid. If it's equal to zero it returns that the card is valid and the Card's Brand/Payment Network
+# Applies third step of the original algorithm verifying if the last digit of the sum is 0 (zero). 
+# If it's different than zero or if it's lenght is not between 13 and 16, it returns the card is invalid. 
+# If it's equal to zero it returns the card is valid and the Card's Brand/Payment Network
 if checkLastDigit != 0 or len(cardNumberSplited) < 13 or len(cardNumberSplited) > 16:
     print("Invalid Card Number!!")
 else:
