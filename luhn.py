@@ -48,12 +48,8 @@ for element in range(0, index, 2):
     arrayLeftAside.append(cardNumberSplited[element])
 
 # Takes the array that contains the second-to-last part, doubles each digit and stores the result into a new array -----------------------
-
-
 def double(number):
     return number * 2
-
-
 doubledArray = list(map(double, arrayToDouble))
 
 # Looks for elements in the doubled array that have more than one digit and splits it in two separated digits ----------------------------
